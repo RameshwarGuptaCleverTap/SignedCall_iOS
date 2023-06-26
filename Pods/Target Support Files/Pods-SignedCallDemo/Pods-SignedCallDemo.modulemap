@@ -1,0 +1,6 @@
+framework module Pods_SignedCallDemo {
+  umbrella header "Pods-SignedCallDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-SignedCallDemo/Pods-SignedCallDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CleverTap-iOS-SDK/CleverTapSDK.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CTSimplePing/CTSimplePing.framework/CTSimplePing
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CTSoftPhone/CTSoftPhone.framework/CTSoftPhone
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CleverTap-SignedCall-SDK/SignedCallSDK.framework/SignedCallSDK

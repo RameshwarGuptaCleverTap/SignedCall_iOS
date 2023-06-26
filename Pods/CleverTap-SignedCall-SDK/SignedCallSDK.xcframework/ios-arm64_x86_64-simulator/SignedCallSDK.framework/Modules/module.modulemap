@@ -1,0 +1,11 @@
+framework module SignedCallSDK {
+  umbrella header "SignedCallSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SignedCallSDK.Swift {
+  header "SignedCallSDK-Swift.h"
+  requires objc
+}

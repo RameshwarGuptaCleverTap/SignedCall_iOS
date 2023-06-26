@@ -1,0 +1,192 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SignedCallSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import CTSimplePing
+import CTSoftPhone
+import CallKit
+import CleverTapSDK
+import Foundation
+import Network
+import OSLog
+import PushKit
+@_exported import SignedCallSDK
+import SocketIO
+import Swift
+import SystemConfiguration
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import os.log
+import os
+@objc @_inheritsConvenienceInitializers @objcMembers public class SignedCall : ObjectiveC.NSObject {
+  @objc public static var overrideDefaultBranding: SignedCallSDK.SCCallScreenBranding? {
+    @objc get
+    @objc set(value)
+  }
+  @objc public static var isLoggingEnabled: Swift.Bool {
+    @objc get
+    @objc set(value)
+  }
+  @objc public static var isEnabled: Swift.Bool {
+    @objc get
+    @objc set(value)
+  }
+  @objc public static var cleverTapInstance: CleverTapSDK.CleverTap? {
+    @objc get
+    @objc set(value)
+  }
+  public static func call(callOptions: SignedCallSDK.SCCallOptionsModel, completion: @escaping (Swift.Result<Swift.Bool, SignedCallSDK.SCError>) -> Swift.Void)
+  @objc public static func registerVoIP(withRootView rootview: UIKit.UIViewController, appName: Swift.String? = nil)
+  public static func initSDK(withInitOptions initOptions: [Swift.String : Any?], completion: @escaping (Swift.Result<Swift.Bool, SignedCallSDK.SCError>) -> Swift.Void)
+  @objc public static func logout()
+  public static func checkNetworkLatency(completion: @escaping (Swift.Result<Swift.Int, SignedCallSDK.SCError>) -> Swift.Void)
+  @objc public static func hangup()
+  @objc public static func disconnectSignallingSocket()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SignedCallSDK.SignedCall {
+  @objc public static func initSDK(initOptions: [Swift.String : Any], completion: @escaping ((Swift.Bool, SignedCallSDK.SCErrorObj?) -> Swift.Void))
+  @objc public static func call(callOptions: SignedCallSDK.SCCallOptionsModel, completion: @escaping ((Swift.Bool, SignedCallSDK.SCErrorObj?) -> Swift.Void))
+}
+@_inheritsConvenienceInitializers @objc public class Platform : ObjectiveC.NSObject {
+  @objc public static let isSimulator: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct NetworkingConstants {
+}
+public typealias SimplePingClientCallback = (Swift.String?) -> ()
+@objc @_inheritsConvenienceInitializers public class SimplePingClient : ObjectiveC.NSObject {
+  public static func pingHostname(hostname: Swift.String, andResultCallback callback: SignedCallSDK.SimplePingClientCallback?)
+  public func pingHostname(hostname: Swift.String, andResultCallback callback: SignedCallSDK.SimplePingClientCallback?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SignedCallSDK.SimplePingClient : CTSimplePing.CTSimplePingDelegate {
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didStartWithAddress address: Foundation.Data)
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didFailWithError error: any Swift.Error)
+  public func simplePing(pinger: CTSimplePing.CTSimplePingClient!, didSendPacket packet: Foundation.NSData!)
+  public func simplePing(pinger: CTSimplePing.CTSimplePingClient!, didFailToSendPacket packet: Foundation.NSData!, error: Foundation.NSError!)
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didReceiveUnexpectedPacket packet: Foundation.Data)
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didReceivePingResponsePacket packet: Foundation.Data, sequenceNumber: Swift.UInt16)
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didSendPacket packet: Foundation.Data, sequenceNumber: Swift.UInt16)
+  @objc dynamic public func simplePing(_ pinger: CTSimplePing.CTSimplePingClient, didFailToSendPacket packet: Foundation.Data, sequenceNumber: Swift.UInt16, error: any Swift.Error)
+  public func simplePing(pinger: CTSimplePing.CTSimplePingClient!, didReceivePingResponsePacket packet: Foundation.NSData!)
+}
+@objc public enum SCCallStatus : Swift.Int {
+  case CALL_OVER = 3001
+  case CALL_ANSWERED = 3002
+  case CALL_DECLINED = 3003
+  case CALL_MISSED = 3004
+  case RECEIVER_BUSY_ON_ANOTHER_CALL = 3005
+  case CALL_CANCEL = 3006
+  case DELAYED_ANSWER_ACTION = 3007
+  case ERR_MICROPHONE_PERMISSION_NOT_GRANTED = 3008
+  case CALL_CONNECTED = 3010
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public let SCErrorDomain: Swift.String
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @objc public class SCErrorObj : Foundation.NSError {
+  @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  @objc deinit
+}
+@objc public enum SCError : Swift.Int, Swift.CaseIterable {
+  case ERR_NETWORK_NOT_AVAILABLE = 1000
+  case ERR_CALL_CONTEXT_INVALID = 2000
+  case ERR_CLEVERTAP_INSTANCE_REQUIRED = 2001
+  case ERR_CLEVERTAP_URL_NOT_AVAILABLE = 2002
+  case ERR_SIGNEDCALLSDK_NOT_INITIALIZED = 2003
+  case ERR_ACCOUNTID_REQUIRED = 2004
+  case ERR_APIKEY_REQUIRED = 2005
+  case ERR_CUID_MISSING = 2006
+  case ERR_INVALID_LENGTH_CUID = 2007
+  case ERR_INVALID_CUID = 2008
+  case ERR_INVALID_NAME_LENGTH = 2009
+  case ERR_INVALID_APPID = 2010
+  case ERR_PRODUCTION_FIELD_REQUIRED = 2011
+  case ERR_CONTACT_REGISTRATION_FAILED = 2012
+  case ERR_VOIP_SERVICE_FAILED_TO_REGISTER = 2013
+  case ERR_MICROPHONE_PERMISSION_NOT_GRANTED = 5001
+  case ERR_CONTACT_NOT_REACHABLE = 5002
+  case ERR_CAN_NOT_CALL_SELF = 5003
+  case ERR_CUID_ALREADY_CONNECTED_ELSEWHERE = 5004
+  case ERR_FAILURE_IN_MAKE_CALL = 5005
+  case ERR_FEATURE_NOT_AVAILABLE = 5006
+  case ERR_ONGOING_CALL = 5009
+  case ERR_STOP_RETRY = 5007
+  case ERR_NETWORK_LATENCY = 5008
+  case ERR_SIGNALLING_SOCKET_CONNECTION = 5012
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [SignedCallSDK.SCError]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [SignedCallSDK.SCError] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension SignedCallSDK.SCError : Foundation.CustomNSError {
+  public var errorMessage: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String {
+    get
+  }
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SystemEventsUtil {
+  public static let shared: SignedCallSDK.SystemEventsUtil
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SCUtils {
+  @objc deinit
+}
+@objc @objcMembers public class SCCallScreenBranding : ObjectiveC.NSObject {
+  @objc public enum ButtonTheme : Swift.Int, Swift.RawRepresentable {
+    public init?(rawValue: Swift.String)
+    case light
+    case dark
+    public typealias RawValue = Swift.String
+    public var rawValue: SignedCallSDK.SCCallScreenBranding.ButtonTheme.RawValue {
+      get
+    }
+  }
+  @objc public var bgColor: Swift.String
+  @objc public var fontColor: Swift.String
+  @objc public var logo: Swift.String
+  @objc public var buttonTheme: SignedCallSDK.SCCallScreenBranding.ButtonTheme
+  @objc public init(bgColor: Swift.String, fontColor: Swift.String, logo: Swift.String, buttonTheme: SignedCallSDK.SCCallScreenBranding.ButtonTheme)
+  @objc deinit
+}
+@objc @objcMembers public class SCCustomMetadata : ObjectiveC.NSObject {
+  @objc public init(initiatorImage: Swift.String?, receiverImage: Swift.String?)
+  @objc deinit
+}
+@objc @objcMembers public class SCCallOptionsModel : ObjectiveC.NSObject {
+  @objc public init(context: Swift.String, receiverCuid: Swift.String, customMetaData: SignedCallSDK.SCCustomMetadata? = nil)
+  @objc deinit
+}
+public struct SCContactModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SignedCallSDK.SCCallStatus : Swift.Equatable {}
+extension SignedCallSDK.SCCallStatus : Swift.Hashable {}
+extension SignedCallSDK.SCCallStatus : Swift.RawRepresentable {}
+extension SignedCallSDK.SCError : Swift.Equatable {}
+extension SignedCallSDK.SCError : Swift.Hashable {}
+extension SignedCallSDK.SCError : Swift.RawRepresentable {}
+extension SignedCallSDK.SCCallScreenBranding.ButtonTheme : Swift.Equatable {}
+extension SignedCallSDK.SCCallScreenBranding.ButtonTheme : Swift.Hashable {}

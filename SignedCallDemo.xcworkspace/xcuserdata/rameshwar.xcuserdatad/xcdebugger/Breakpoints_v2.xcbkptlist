@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "56EB92E4-2870-41FA-A68B-5666C7812562"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "539C551F-CDFF-4417-8CA4-EC4D5F13A557"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "signedCallInitialisation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A10130C3-603B-4DCA-B997-094DA339C822"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "signedCallInitialisation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A10130C3-603B-4DCA-B997-094DA339C822 - af76456f5e676083"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, SignedCallSDK.SCError&gt;) -&gt; () in SignedCallDemo.ViewController.signedCallInitialisation() -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "864">
+               </Location>
+               <Location
+                  uuid = "A10130C3-603B-4DCA-B997-094DA339C822 - af76456f5e6760e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, SignedCallSDK.SCError&gt;) -&gt; () in SignedCallDemo.ViewController.signedCallInitialisation() -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6C07069A-62EB-4E07-9FB1-2938CFB88AAA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "callStatus(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6C07069A-62EB-4E07-9FB1-2938CFB88AAA - 2ef667d998b8406c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "6C07069A-62EB-4E07-9FB1-2938CFB88AAA - 2ef667d998b84033"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "6C07069A-62EB-4E07-9FB1-2938CFB88AAA - 2ef667d998b84033"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C889338-A0B4-45D9-B6C0-0D76FED23611"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "makePhoneCallsViaSignedCall()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C889338-A0B4-45D9-B6C0-0D76FED23611 - 4f9d1bec1654d8fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, SignedCallSDK.SCError&gt;) -&gt; () in SignedCallDemo.ViewController.makePhoneCallsViaSignedCall() -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "5C889338-A0B4-45D9-B6C0-0D76FED23611 - 4f9d1bec1654d8b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Bool, SignedCallSDK.SCError&gt;) -&gt; () in SignedCallDemo.ViewController.makePhoneCallsViaSignedCall() -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D9FF58C-7606-4538-AB8F-40003E30E780"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "callStatus(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D9FF58C-7606-4538-AB8F-40003E30E780 - 2ef667d998b8406c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "2D9FF58C-7606-4538-AB8F-40003E30E780 - 2ef667d998b8404d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "540">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78DEEE69-172E-4465-BDEA-DEFBC706E267"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignedCallDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "callStatus(notification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78DEEE69-172E-4465-BDEA-DEFBC706E267 - 2ef667d998b8406c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "540">
+               </Location>
+               <Location
+                  uuid = "78DEEE69-172E-4465-BDEA-DEFBC706E267 - 2ef667d998b84033"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SignedCallDemo.ViewController.callStatus(notification: Foundation.Notification) -&gt; ()"
+                  moduleName = "SignedCallDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rameshwar/Downloads/SignedCallDemo%202%203/SignedCallDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
