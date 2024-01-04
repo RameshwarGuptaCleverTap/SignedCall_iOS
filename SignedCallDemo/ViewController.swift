@@ -13,8 +13,8 @@ import SignedCallSDK
 class ViewController: UIViewController {
     
     let initOptions: [String: Any] = [
-        "accountID": "640f4e74fe2466eed4a7ec45234343",
-        "apiKey": "jkhjkhxzyoaK5rgdIzHlfVU3gmolqcD0YLrghXhnOd0hcFOytg7hlBWJmIdtzmLTIs8U8Miuy23ui43",
+        "accountID": "32iuh434y7878fwhfdf87ydf89shu",
+        "apiKey": "jkhjkhxzyoaK5rgdIzHlfVU3gkjwhef87few7webewjbrewr78wewe87erew67e67ew7w7rywemolqcD0YLrghXhn",
         "cuid" : "CT_251121_TEST",
         "production": false
     ]
